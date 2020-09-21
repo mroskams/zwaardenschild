@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalisatie - Zwaardenschilden.com</title>
+    <link rel="stylesheet" href="../../css/stylesheet.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="grid_header">
+    <h1 class="verborgen">Personalisatie</h1>
+    <!--Menubar-->
+    <nav class="main_nav">
+        <h2 class="verborgen">Menubar</h2>
+        <!--Logo-->
+        <a href="#" id="logo">Zwaard en Schild</a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="../hoofdpaginas/producten.html">Producten</a>
+                <ul>
+                    <li><a href="../subpaginas/groep_lange_zwaarden.html">Lange Zwaarden</a></li>
+                    <li><a href="../subpaginas/groep_middellange_zwaarden.html">Middellange Zwaarden</a></li>
+                    <li><a href="../subpaginas/groep_korte_zwaarden.html">Korte Zwaarden</a></li>
+                    <li><a href="../subpaginas/groep_schilden.html">Schilden</a></li>
+                </ul>
+            </li>
+            <li><a href="../hoofdpaginas/personalisatie.html">Personalisatie</a></li>
+            <li><a href="../hoofdpaginas/blog.html">Blog</a></li>
+            <li><a href="../hoofdpaginas/contact.html">Contact</a></li>
+            <li><a href="../hoofdpaginas/faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="grid_main">
+    <h2 class="verborgen">Personalisatie formulier</h2>
+<form class="form" action="bevestiging.html" method="get" id="form1">
+
+    <h3 class="verborgen">Bestelformulier</h3>
+    <fieldset class="Field1">
+        <legend class="legend1">Persoonlijke gegevens</legend>
+        <label class="field-labels" for="voornaam">Geef je Voornaam:</label>
+        <input class="field1-input" type="text" id="voornaam" name="Voornaam" required placeholder="Voornaam">
+        <label class="field-labels" for="achternaam">Geef je Achternaam:</label>
+        <input class="field1-input" type="text" id="achternaam" name="Achternaam" required placeholder="Achternaam">
+        <label class="field-labels" for="telefoonnummer">Geef je telefoonnummer:</label>
+        <input class="field1-input" type="tel" id="telefoonnummer" name="telefoonnummer" placeholder="Telefoonnummer">
+        <label class="field-labels" for="gsmnummer">Geef je GSM nummer:</label>
+        <input class="field1-input" type="tel" id="gsmnummer" name="gsmnummer" required placeholder="GSM nummer">
+        <label class="field-labels" for="e-mail">Geef je E-mailadres:</label>
+        <input class="field1-input" type="email" id="e-mail" name="e-mail" required placeholder="E-mail">
+    </fieldset>
+
+    <fieldset class="Field2">
+        <legend class="legend2">Voorkeur</legend>
+        <label class="field-labels">Geef de type zwaard:
+            <select name ="type Zwaard">
+                <option class="field2-options" value="default"></option>
+                <option class="field2-option" value="Lange Zwaard">Lange Zwaard</option>
+                <option class="MK" value="Medium Zwaard">Medium Zwaard</option>
+                <option class="MK" value="Korte Zwaard">Korte Zwaard</option>
+                <option class="MK" value="Schilden">Schilden</option>
+            </select>
+        </label>
+
+        <label class="field-labels">Geef het soort zwaard:
+            <select name ="Soort Zwaard">
+                <option class="field2-option" value="default"></option>
+                <option class="field2-option" value="Claymore">Claymore</option>
+                <option class="field2-option" value="Templar">Templar</option>
+                <option class="field2-option" value="Arabic">Arabic</option>
+                <option class="field2-option" value="Chinese">Chinese</option>
+                <option class="field2-option" value="Japanese">Japanese</option>
+            </select>
+        </label>
+
+        <label class="field-labels">Geef de type schild:
+            <select name ="Type Schild">
+                <option class="field2-option" value="default"></option>
+                <option class="field2-option" value="Claymore">Normal</option>
+                <option class="field2-option" value="Templar">Templar</option>
+                <option class="field2-option" value="Arabic">Arabic</option>
+                <option class="field2-option" value="Chinese">Chinese</option>
+                <option class="field2-option" value="Japanese">Japanese</option>
+            </select>
+        </label>
+
+    </fieldset>
+
+    <fieldset class="Field3">
+        <legend class="legend3">Opties</legend>
+        <label class="field-labels">Geef het soort metaal:
+            <select name="type Metaal">
+                <option value="default"></option>
+                <option value="Titanium">Titanium</option>
+                <option value="Innox">Innox</option>
+                <option value="Staal">Staal</option>
+                <option value="IJzer">Ijzer</option>
+            </select>
+        </label>
+
+        <label class="field-labels">Ingraveren:
+            <select name="type Metaal">
+                <option value="default"></option>
+                <option value="Metaal">Metaal</option>
+                <option value="Handvat">Handvat</option>
+            </select>
+        </label>
+
+        <label class="field-labels" for="ingraveren">Omschrijving:
+            <textarea id="ingraveren" name="ingraveren" placeholder="Geef een omschrijving wat je graag wil laten ingraveren"></textarea>
+        </label>
+
+        <label class="field-labels" >Handvat kleur:
+            <select name="Kleur">
+                <option value="default"></option>
+                <option value="Ja">Ja</option>
+                <option value="Nee">Nee</option>
+            </select>
+            <input type="color" name="color_picker">
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+</form>
+    <aside class="grid_aside">
+
+    </aside>
+
+    <footer class="grid_footer">
+        <h2 class="verborgen">Contactinformatie</h2>
+        <address class="contact_footer">
+            <a class="a_footer" href="mailto:mark.roskams@student.kdg.be">Mark Roskams</a><br>
+            Nationaalstraat 5<br>
+            2000 Antwerpen
+        </address>
+    </footer>
+</main>
+</body>
+</html>
